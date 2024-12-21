@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            font-size: 1rem;
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .sidebar a.active, .sidebar a:hover {
+            background-color: #e9ecef;
+            color: #000;
+        }
+        .profile-header {
+            background-color: #f1f3f5;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .form-control {
+            border-radius: 10px;
+        }
+        .btn-outline-primary {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <h5 class="px-3">Account</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-person-circle me-2"></i>My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-calendar-check me-2"></i>Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-gear me-2"></i>Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-envelope me-2"></i>Contact Us</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link text-danger" href="#"><i class="bi bi-box-arrow-left me-2"></i>Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 py-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4>Settings</h4>
+                    <small>Account > My Profile</small>
+                </div>
+
+                <!-- Profile Header -->
+                <div class="profile-header mt-1 d-flex align-items-center">
+                    <img src="C:\Users\rafiw\OneDrive\Documents\TB2_Pemograman Web\images\elgasing1.jpg" alt="Profile Picture" class="rounded-circle me-1">
+                    <div>
+                        <h5>Roze</h5>
+                        <p class="text-muted mb-0">@Roze21@gmail.com</p>
+                    </div>
+                    <button class="btn btn-outline-primary ms-auto">Edit Profile</button>
+                </div>
+
+                <!-- Form Section -->
+                <form class="mt-4">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" id="firstName" class="form-control" value="wizard">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" id="lastName" class="form-control" value="wizard">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" id="username" class="form-control" value="king wizard">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="status" class="form-label">Status</label>
+                            <input type="text" id="status" class="form-control" value="Active">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="billingEmail" class="form-label">Billing Email</label>
+                            <input type="email" id="billingEmail" class="form-control" value="kingwizard14@gmail.com">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="contact" class="form-label">Contact</label>
+                            <input type="text" id="contact" class="form-control" value="081952556703">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="zipCode" class="form-label">Zip Code</label>
+                            <input type="text" id="zipCode" class="form-control" value="8894">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" id="city" class="form-control" value="Jakarta">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" id="address" class="form-control" value="Colombo 07">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

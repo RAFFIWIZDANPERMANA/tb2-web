@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing History</title>
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            width: 240px;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            padding: 1.5rem;
+        }
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .sidebar a.active {
+            background-color: #e0f0ff;
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+        .badge-status {
+            font-size: 0.9rem;
+            padding: 0.4rem 0.6rem;
+            border-radius: 5px;
+        }
+        .badge-confirmed {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .badge-cancelled {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        .badge-pending {
+            background-color: #ffc107;
+            color: #fff;
+        }
+        .table-container {
+            margin: 2rem;
+            padding: 2rem;
+            background-color: #e9ecef;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h5>Account > <a href="#" class="text-decoration-none">Bookings</a></h5>
+            <h3 class="mt-4 fw-bold">Settings</h3>
+            <a href="#">👤 My Profile</a>
+            <a href="#" class="active">📅 Bookings</a>
+            <a href="#">⚙️ Settings</a>
+            <a href="#">📧 Contact us</a>
+            <a href="#" class="text-danger mt-5 d-inline-block">↩ Logout</a>
+        </div>
+
+        <!-- Content -->
+        <div class="container table-container">
+            <h3 class="fw-bold mb-4">Billing History</h3>
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">DATE</th>
+                        <th scope="col">TYPE</th>
+                        <th scope="col">AMOUNT</th>
+                        <th scope="col">INVOICE</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows -->
+                    <tr>
+                        <td>21/10/2021</td>
+                        <td>Basic</td>
+                        <td>$49.00</td>
+                        <td>#892310</td>
+                        <td><span class="badge badge-status badge-confirmed">Confirmed</span></td>
+                        <td>
+                            <button class="btn btn-outline-secondary btn-sm">View</button>
+                            <button class="btn btn-primary btn-sm">Export PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21/10/2021</td>
+                        <td>Basic</td>
+                        <td>$49.00</td>
+                        <td>#892</td>
+                        <td><span class="badge badge-status badge-cancelled">Cancelled</span></td>
+                        <td>
+                            <button class="btn btn-outline-secondary btn-sm">View</button>
+                            <button class="btn btn-primary btn-sm">Export PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21/10/2021</td>
+                        <td>Basic</td>
+                        <td>$49.00</td>
+                        <td>#892310</td>
+                        <td><span class="badge badge-status badge-pending">Pending</span></td>
+                        <td>
+                            <button class="btn btn-outline-secondary btn-sm">View</button>
+                            <button class="btn btn-primary btn-sm">Export PDF</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21/10/2021</td>
+                        <td>Basic</td>
+                        <td>$49.00</td>
+                        <td>#892310</td>
+                        <td><span class="badge badge-status badge-confirmed">Confirmed</span></td>
+                        <td>
+                            <button class="btn btn-outline-secondary btn-sm">View</button>
+                            <button class="btn btn-primary btn-sm">Export PDF</button>
+                        </td>
+                    </tr>
+                    <!-- Duplicate rows for demo -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
